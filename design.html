@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes & Pizza House</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">Mauli Cakes & Pizza House</div>
+        <p>Delicious treats for every occasion</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#cakes">Cakes</a></li>
+            <li><a href="#pizzas">Pizzas</a></li>
+            <li><a href="#Burger">Burger</a></li>
+            <li><a href="#cart">My Order</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="cakes" class="menu-section">
+            <h2>Our Delicious Cakes</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Red Velvet Cake">
+                    <div class="item-details">
+                        <h3>Red Velvet Cake</h3>
+                        <p>Classic red velvet with cream cheese frosting</p>
+                        <p class="price">Rs 240.99</p>
+                        <button class="add-to-cart" data-id="1" data-name="Red Velvet Cake" data-price="24.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Chocolate Cake">
+                    <div class="item-details">
+                        <h3>Chocolate Cake</h3>
+                        <p>Rich chocolate cake with chocolate ganache</p>
+                        <p class="price">Rs399.99</p>
+                        <button class="add-to-cart" data-id="2" data-name="Chocolate Cake" data-price="22.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Black Forest Cake">
+                    <div class="item-details">
+                        <h3>Black Forest Cake</h3>
+                        <p>Chocolate cake with cherries and whipped cream</p>
+                        <p class="price">Rs 150.99</p>
+                        <button class="add-to-cart" data-id="3" data-name="Black Forest Cake" data-price="26.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cheesecake">
+                    <div class="item-details">
+                        <h3>Cheesecake</h3>
+                        <p>Creamy New York style cheesecake</p>
+                        <p class="price">Rs 299.99</p>
+                        <button class="add-to-cart" data-id="4" data-name="Cheesecake" data-price="20.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Vanilla Cake">
+                    <div class="item-details">
+                        <h3>Vanilla Cake</h3>
+                        <p>Classic vanilla cake with buttercream frosting</p>
+                        <p class="price">Rs 249.99</p>
+                        <button class="add-to-cart" data-id="5" data-name="Vanilla Cake" data-price="21.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Carrot Cake">
+                    <div class="item-details">
+                        <h3>Carrot Cake</h3>
+                        <p>Moist carrot cake with cream cheese frosting and walnuts</p>
+                        <p class="price">Rs 500.99</p>
+                        <button class="add-to-cart" data-id="9" data-name="Carrot Cake" data-price="23.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Lemon Cake">
+                    <div class="item-details">
+                        <h3>Lemon Cake</h3>
+                        <p>Zesty lemon cake with lemon glaze</p>
+                        <p class="price">Rs 444.50</p>
+                        <button class="add-to-cart" data-id="10" data-name="Lemon Cake" data-price="22.50">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Tiramisu">
+                    <div class="item-details">
+                        <h3>Tiramisu</h3>
+                        <p>Italian coffee-flavored dessert with mascarpone</p>
+                        <p class="price">Rs 234.99</p>
+                        <button class="add-to-cart" data-id="11" data-name="Tiramisu" data-price="25.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Strawberry Shortcake">
+                    <div class="item-details">
+                        <h3>Strawberry Shortcake</h3>
+                        <p>Layered sponge cake with fresh strawberries and cream</p>
+                        <p class="price">Rs 379.50</p>
+                        <button class="add-to-cart" data-id="12" data-name="Strawberry Shortcake" data-price="24.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pizzas" class="menu-section">
+            <h2>Our Tasty Pizzas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cheese Pizza">
+                    <div class="item-details">
+                        <h3>Cheese Pizza</h3>
+                        <p>Classic pizza with mozzarella cheese and tomato sauce</p>
+                        <p class="price">Rs 180.99</p>
+                        <button class="add-to-cart" data-id="6" data-name="Cheese Pizza" data-price="12.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Veg Pizza">
+                    <div class="item-details">
+                        <h3>Veg Pizza</h3>
+                        <p>Pizza with bell peppers, mushrooms, onions, and olives</p>
+                        <p class="price">Rs 199.99</p>
+                        <button class="add-to-cart" data-id="7" data-name="Veg Pizza" data-price="14.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pepperoni Pizza">
+                    <div class="item-details">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Classic pizza with pepperoni and extra cheese</p>
+                        <p class="price">Rs 150.99</p>
+                        <button class="add-to-cart" data-id="8" data-name="Pepperoni Pizza" data-price="15.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Hawaiian Pizza">
+                    <div class="item-details">
+                        <h3>Hawaiian Pizza</h3>
+                        <p>Ham, pineapple, and mozzarella cheese</p>
+                        <p class="price">Rs 200.50</p>
+                        <button class="add-to-cart" data-id="13" data-name="Hawaiian Pizza" data-price="16.50">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="BBQ Chicken Pizza">
+                    <div class="item-details">
+                        <h3>BBQ Chicken Pizza</h3>
+                        <p>Grilled chicken, red onions, and BBQ sauce</p>
+                        <p class="price">Rs 170.99</p>
+                        <button class="add-to-cart" data-id="14" data-name="BBQ Chicken Pizza" data-price="17.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Margherita Pizza">
+                    <div class="item-details">
+                        <h3>Margherita Pizza</h3>
+                        <p>Fresh tomatoes, basil, and mozzarella</p>
+                        <p class="price">Rs 140.50</p>
+                        <button class="add-to-cart" data-id="15" data-name="Margherita Pizza" data-price="14.50">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1620374645498-af6bd681a0bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Meat Lovers Pizza">
+                    <div class="item-details">
+                        <h3>Meat Lovers Pizza</h3>
+                        <p>Pepperoni, sausage, ham, and bacon</p>
+                        <p class="price">Rs 110.99</p>
+                        <button class="add-to-cart" data-id="16" data-name="Meat Lovers Pizza" data-price="18.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Supreme Pizza">
+                    <div class="item-details">
+                        <h3>Supreme Pizza</h3>
+                        <p>Pepperoni, sausage, mushrooms, peppers, and onions</p>
+                        <p class="price">Rs 189.50</p>
+                        <button class="add-to-cart" data-id="17" data-name="Supreme Pizza" data-price="17.50">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pizza_Margherita_stu_spivack.jpg/1200px-Pizza_Margherita_stu_spivack.jpg">
+                    <div class="item-details">
+                        <h3>Margreita Pizza</h3>
+                        <p>Pepperoni, onions,sausage,peppers,and mushrooms </p>
+                        <p class="price">Rs 222.50</p>
+                        <button class="add-to-cart" data-id="17" data-name="Supreme Pizza" data-price="17.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Burger" class="menu-section">
+            <h2>Our Tasty Burger</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="./imges/1.jpg" alt="Cheese Burger">
+                    <div class="item-details">
+                        <h3>Cheese Burger</h3>
+                        <p>The cheeseburger is a timeless classic that has become synonymous with comfort food</p>
+                        <p class="price">Rs 60.00</p>
+                        <button class="add-to-cart" data-id="6" data-name="Cheese Burger" data-price="60.00">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./imges/2.jpg" alt="veggie Burger">
+                    <div class="item-details">
+                        <h3>Veggie Burger</h3>
+                        <p>The veggie burger is a favorite among vegetarians and health-conscious foodies.</p>
+                        <p class="price">Rs 100.00</p>
+                        <button class="add-to-cart" data-id="7" data-name="veggie Burger" data-price="100.00">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./imges/3.jpg" alt="Turkey Burger">
+                    <div class="item-details">
+                        <h3>Turkey Burger</h3>
+                        <p>For those looking for a leaner option, the turkey burger is an excellent choice.</p>
+                        <p class="price">Rs 80.50</p>
+                        <button class="add-to-cart" data-id="8" data-name="Turkey Burger" data-price="80.50">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="./imges/4.jpg" alt="Black Bean Burger">
+                    <div class="item-details">
+                        <h3>Black Bean Burger</h3>
+                        <p>A staple in plant-based cuisine, the black bean burger is hearty, flavorful, and rich in protein.</p>
+                        <p class="price">Rs 150.50</p>
+                        <button class="add-to-cart" data-id="13" data-name="Black Bean Burger" data-price="150.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="./imges/5.jpg" alt="Salmon Burger">
+                    <div class="item-details">
+                        <h3>Salmon Burger</h3>
+                        <p>The salmon burger is a refreshing and gourmet take on the traditional burger.</p>
+                        <p class="price">Rs 170.99</p>
+                        <button class="add-to-cart" data-id="14" data-name="Salmon Burger" data-price="170.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="./imges/6.jpg" alt="Smash Burger">
+                    <div class="item-details">
+                        <h3>Smash Burger</h3>
+                        <p>The smash burger is all about technique. A ball of ground beef is smashed onto a hot griddle.</p>
+                        <p class="price">Rs 199.50</p>
+                        <button class="add-to-cart" data-id="15" data-name="Smash Burger" data-price="199.50">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="./imges/7.jpg" alt="EIK Burger">
+                    <div class="item-details">
+                        <h3>EIK Burger</h3>
+                        <p>For those seeking an adventurous option, the elk burger offers a gamey, rich flavor that’s lower in fat compared to beef.</p>
+                        <p class="price">Rs 249.99</p>
+                        <button class="add-to-cart" data-id="16" data-name="EIK Burger" data-price="249.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="./imges/8.jpg" alt="Mushroom Burger">
+                    <div class="item-details">
+                        <h3>Mushroom Burger</h3>
+                        <p>The mushroom burger is a vegetarian delight that often features a large portobello mushroom cap in place of a meat patty.</p>
+                        <p class="price">Rs 189.50</p>
+                        <button class="add-to-cart" data-id="17" data-name="Mushroom Burger" data-price="189.50">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./imges/8.jpg" alt="Meat Burger">
+                    <div class="item-details">
+                        <h3>Meat Burger</h3>
+                        <p>The meat burger encompasses all kinds of traditional patties made from beef, lamb, or pork.</p>
+                        <p class="price">Rs 232.50</p>
+                        <button class="add-to-cart" data-id="17" data-name="Meat Burger" data-price="232.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="cart-section">
+            <h2>My Order</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p>Your cart is empty</p>
+            </div>
+            <div class="cart-total">
+                Total: $<span id="cart-total">0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </section>
+        <div class="order-form" id="order-form">
+            <h2>Order Information</h2>
+            <form id="order-form-data">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-time">Delivery Time</label>
+                    <select id="delivery-time" name="delivery-time" required>
+                        <option value="">Select a time</option>
+                        <option value="asap">As soon as possible</option>
+                        <option value="30">Within 30 minutes</option>
+                        <option value="60">Within 1 hour</option>
+                        <option value="90">Within 1.5 hours</option>
+                        <option value="120">Within 2 hours</option>
+                        <option value="specific">Specific time</option>
+                    </select>
+                </div>
+                <div class="form-group" id="specific-time-group" style="display: none;">
+                    <label for="specific-time">Specific Time</label>
+                    <input type="datetime-local" id="specific-time" name="specific-time">
+                </div>
+                <div class="form-group">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Select payment method</option>
+                        <option value="cash">Cash on Delivery</option>
+                        <option value="card">Credit/Debit Card</option>
+                        <option value="online">Online Payment</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Special Instructions</label>
+                    <textarea id="notes" name="notes" rows="2"></textarea>
+                </div>
+                <button type="submit" class="submit-order">Place Order</button>
+            </form>
+        </div>
+
+        <div class="order-confirmation" id="order-confirmation">
+            <h3>Thank You for Your Order!</h3>
+            <p>Your order has been placed successfully.</p>
+            
+            <div class="order-details">
+                <h4>Order Summary</h4>
+                <div id="order-summary-items">
+                    <!-- Order items will be added here dynamically -->
+                </div>
+                <div class="order-summary">
+                    <div class="order-item">
+                        <span>Subtotal:</span>
+                        <span id="order-subtotal">Rs 0.00</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Delivery Fee:</span>
+                        <span id="order-delivery">Rs 2.99</span>
+                    </div>
+                    <div class="order-item" style="font-weight: bold;">
+                        <span>Total:</span>
+                        <span id="order-total">Rs 0.00</span>
+                    </div>
+                </div>
+                
+                <h4 style="margin-top: 20px;">Delivery Information</h4>
+                <p id="customer-name">Name: </p>
+                <p id="customer-phone">Phone: </p>
+                <p id="customer-address">Address: </p>
+                <p id="delivery-info">Delivery Time: </p>
+                <p id="payment-info">Payment Method: </p>
+            </div>
+            
+            <p>We'll contact you shortly to confirm the details.</p>
+            <button class="back-to-menu" id="back-to-menu">Back to Menu</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mauli Cakes & Pizza House. All rights reserved.</p>
+        <p>Owner:Prof.Amol Kale | Contact us: amolkale0102@gmail.com | + 91 9762 95948</p>
+    </footer>
+
+          <script src="script.js"></script>
+  </body>
+</html>
